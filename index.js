@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
       Numero: "001",
       Nome: "Bulbasaur",
       Tipo: "Grass and Poison",
-      Imagem: url("public/css/img/001.png"),
+      Imagem: "/img/001.png",
       Descricao:
         "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
       Altura: " 70 cm",
@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
       Numero: "004",
       Nome: "Charmander",
       Tipo: "Fire",
-      Imagem: url("004.png"),
+      Imagem: "004.png",
       Descricao:
         "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
       Altura: "60 cm",
@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
       Numero: "007",
       Nome: "Squirtle",
       Tipo: "Water",
-      Imagem: url((007).png),
+      Imagem: "/img/007.png",
       Descricao:
         "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
       Altura: "50 cm",
