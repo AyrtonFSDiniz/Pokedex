@@ -17,7 +17,11 @@
     <h2><% lista %></h2>
     <ul>
         <% lista.forEach(item => { %>
-            <li><%= item.numero %></li>
+            <li><%= lista.Nome %></li>
+            //<li><%= item.Nome %></li>
+            //<li><%= lista[1].Nome %></li>
+            <li><%= lista.Tipo %></li>
+            <li><%= lista.Imagem %></li>
         <% }) %> 
     </ul>
     <a href="detalhes">Detalhes</a>
