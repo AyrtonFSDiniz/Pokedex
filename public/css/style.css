@@ -1,9 +1,9 @@
-body,
-html {
-  height: 100%;
-}
-#bg {
-  background-image: url("/public/img/background.jpg");
+body {
+  margin: 0;
+  background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 @font-face {
   font-family: Pokemon Hollow;
