@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <bgsound src="/img/song.wav">
+    <link rel="shortcut icon" type="imagex/ico" href="/img/pokemon.ico">
     <title>Pokedex</title>
 </head>
-<body>
+<body id="background-index">
+
     <nav id="navegacao">
+      <audio controls loop>
+        <source src="/img/song.wav" type="audio/wav">
+          Your browser does not support the <code>audio</code> element.
+      </audio>
         <button>Inicio</button>
         <button>Cadastro</button>
         <button>Detalhes</button>
@@ -23,10 +28,17 @@
             //<li><%= lista[1].Nome %></li>
             <li><%= lista.Tipo %></li>
             <li><%= lista.Imagem %></li>
-        <% }) %> 
+        <% }) %>
     </ul>
     <a href="detalhes">Detalhes</a>
     <a href="cadastro">Cadastro</a>
-    
+
 </body>
+<footer>
+  <section>
+    Ícones feitos por
+    <a href="https://www.freepik.com" title="Freepik">Freepik
+    </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
+  </section>
+</footer>
 </html>

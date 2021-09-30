@@ -1,8 +1,23 @@
-body {
+#background-detalhes {
   margin: 0;
   background-image: url("/img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+}
+#background-index {
+  margin: 0;
+  background-image: url("/img/pokedex1.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+}
+#background-cadastro {
+  margin: 0;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: auto;
   text-align: center;
 }
 @font-face {
@@ -15,7 +30,7 @@ body {
   src: url(/public/css/Pokemon\ Solid.ttf);
 }
 h1 {
-  color: rgb(230, 73, 25);
+  color: rgb(236, 243, 23);
   font-family: Pokemon Solid;
   font-size: 50px;
   -webkit-text-stroke: 0.8px rgb(7, 119, 122);
