@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 const port = 3000;
 
-let message = "";
+//let message = "";
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
@@ -58,7 +58,7 @@ app.get("/cadastro", (req, res) => {
 
 app.post("/cadastro", (req, res) => {
   res.send({nome: nome, imagem: imagem, tipo: tipo});
-   message = `Parabéns ${nome}, pokemon cadastrado com sucesso!`;
+  // message = `Parabéns ${nome}, pokemon cadastrado com sucesso!`;
     res.redirect("/");
   });
 

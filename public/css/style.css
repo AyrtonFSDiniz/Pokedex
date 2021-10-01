@@ -46,6 +46,29 @@ img {
   height: 200px;
   width: 200px;
 }
+#audio {
+  display: flex;
+  justify-content: center;
+}
+#botao_detalhes, #botao_inicio, #botao_cadastro {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  justify-content: flex-end;
+  color: white;
+  border: black;
+  margin-right: 100px;
+}
+#botao_detalhes:hover, #botao_inicio:hover, #botao_cadastro:hover {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  justify-content: flex-end;
+  color: yellow;
+  border: white;
+  margin-right: 100px;
+}
+
 #rodape {
   display: flex;
   ;

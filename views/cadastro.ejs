@@ -10,18 +10,26 @@
 </head>
 <body id="background-cadastro">
     <h1>TESTE CADASTRO</h1>
-
+<nav>
     <audio controls loop>
       <source src="/img/song.wav" type="audio/wav">
         Your browser does not support the <code>audio</code> element.
     </audio>
+</nav>
+    <nav>
+      <a id="botao_detalhes"href="detalhes">Detalhes</a>
+      <a id="botao_inicio"href="inicio">Inicio</a>
+      <!--<section id="message">
+          <p>Mensagem temp</p> <span id="close">&times;</span>
+      </section>-->
+    </nav>
 
     <form action="/detalhes" method="POST">
         <section>
             <label for="numero">Número: </label>
             <input type="number" name="numero" id="numero" placeholder="Digite o número do Pokemon" required>
         </section>
-    
+
         <section>
             <label for="nome">Nome: </label>
             <input type="text" name="nome" id="nome" placeholder="Digite o nome do Pokemon" required>
@@ -60,7 +68,7 @@
         <label for="habilidade">Habilidade: </label>
         <input type="text" name="habilidade" id="habilidade" placeholder="Digite a habilidade do Pokemon">
         </section>
-  
+
       <button type="submit">Cadastrar</button>
   </form>
 </body>
