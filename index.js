@@ -5,6 +5,8 @@ const path = require("path");
 const app = express();
 const port = 3000;
 
+let message = "";
+
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -14,7 +16,7 @@ app.get("/", (req, res) => {
       Numero: "001",
       Nome: "Bulbasaur",
       Tipo: "Grass and Poison",
-      Imagem: url("/img/001.png"),
+      Imagem: "/img/001.png",
       Descricao:
         "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
       Altura: " 70 cm",
@@ -26,7 +28,7 @@ app.get("/", (req, res) => {
       Numero: "004",
       Nome: "Charmander",
       Tipo: "Fire",
-      Imagem: url("/img/004.png"),
+      Imagem: "/img/004.png",
       Descricao:
         "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
       Altura: "60 cm",
@@ -38,7 +40,7 @@ app.get("/", (req, res) => {
       Numero: "007",
       Nome: "Squirtle",
       Tipo: "Water",
-      Imagem: url("/img/007.png"),
+      Imagem: "/img/007.png",
       Descricao:
         "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
       Altura: "50 cm",
@@ -53,6 +55,12 @@ app.get("/", (req, res) => {
 app.get("/cadastro", (req, res) => {
   res.render("../views/cadastro");
 });
+
+app.post("/cadastro", (req, res) => {
+  res.send({nome: nome, imagem: imagem, tipo: tipo});
+   message = `Parabéns ${nome}, pokemon cadastrado com sucesso!`;
+    res.redirect("/");
+  });
 
 app.get("/detalhes", (req, res) => {
   res.render("../views/detalhes");
