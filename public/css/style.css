@@ -6,11 +6,13 @@
   text-align: center;
 }
 #background-index {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  background-image: url("/img/pokedex1.jpeg");
-  background-color: rgb(173, 62, 62);
+  background-image: url("/img/pokedexindex1.png");
+  background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   text-align: center;
 }
@@ -30,12 +32,40 @@
   font-family: Pokemon Solid;
   src: url(/public/css/Pokemon\ Solid.ttf);
 }
-h1 {
+#t1 {
   color: rgb(236, 243, 23);
   font-family: Pokemon Solid;
   font-size: 50px;
   -webkit-text-stroke: 0.8px rgb(7, 119, 122);
+  position: relative;
+  top: 0;
+  left: 150px;
+  padding: 0;
+  margin: 0;
+  font-style: oblique;
+  font-weight: 900;
 }
+#c1,
+#d1 {
+  color: black;
+  font-family: Pokemon Solid;
+  text-decoration: none;
+  border: 2px solid black;
+  margin: 1px;
+  background-color: rgb(236, 243, 23);
+  border-radius: 5px;
+}
+#c1:hover,
+#d1:hover {
+  color: rgb(190, 3, 3);
+  font-family: Pokemon Hollow;
+  text-decoration: none;
+  border: 2px solid black;
+  margin: 1px;
+  background-color: rgb(236, 243, 23);
+  border-radius: 5px;
+}
+
 #message {
   display: flex;
 }
@@ -43,33 +73,31 @@ li {
   list-style: none;
 }
 img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
   height: 200px;
   width: 200px;
 }
-#audio {
+#nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-#botao_detalhes, #botao_inicio, #botao_cadastro {
+
+#som {
   display: flex;
-  height: 100px;
-  width: 100px;
-  justify-content: flex-end;
-  color: white;
-  border: black;
-  margin-right: 100px;
-}
-#botao_detalhes:hover, #botao_inicio:hover, #botao_cadastro:hover {
-  display: flex;
-  height: 100px;
-  width: 100px;
-  justify-content: flex-end;
-  color: yellow;
-  border: white;
-  margin-right: 100px;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 #rodape {
   display: flex;
-  ;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+#itens {
+  display: flex;
+  justify-content: space-around;
 }

@@ -10,22 +10,29 @@
 </head>
 <body id="background-index">
 
-    <nav>
-      <a id="botao_detalhes"href="detalhes">Detalhes</a>
-      <a id="botao_cadastro"href="cadastro">Cadastro</a>
+    <nav id="nav">
+      <article id="som">
+        <audio controls loop>
+          <source src="/img/song.wav" type="audio/wav">
+        </audio>
+        
+    <a id="c1" href="cadastro">Cadastro</a>
+  
+    <a id="d1" href="detalhes">Detalhes</a>
+ 
+        
+        
+     
+      
       <!--<section id="message">
           <p>Mensagem temp</p> <span id="close">&times;</span>
       </section>-->
+      
     </nav>
-    <nav id="audio">
-      <audio controls loop>
-        <source src="/img/song.wav" type="audio/wav">
-          Your browser does not support the <code>audio</code> element.
-      </audio>
-    </nav>
-    <h1>Pokedex</h1>
+
+    <h1 id="t1">Pokedex</h1>
     <h2><% lista %></h2>
-    <ul>
+    <ul id="itens">
         <% lista.forEach(item => { %>
             <li><%= item.Nome %></li>
             <li><%= item.Tipo %></li>
@@ -34,11 +41,6 @@
     </ul>
 </body>
 <footer>
-  <section>
-    Ícones feitos por
-    <a href="https://www.freepik.com" title="Freepik">Freepik
-    </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
-  </section>
   <script src="/js/script.js"></script>
 </footer>
 </html>
