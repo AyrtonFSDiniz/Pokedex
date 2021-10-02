@@ -9,12 +9,11 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  background-image: url("/img/pokedexindex1.png");
-  background-color: rgb(255, 255, 255);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(108, 199, 121),
+    rgb(76, 83, 185)
+  );
 }
 #background-cadastro {
   margin: 0;
@@ -36,7 +35,7 @@
   color: rgb(236, 243, 23);
   font-family: Pokemon Solid;
   font-size: 50px;
-  -webkit-text-stroke: 0.8px rgb(7, 119, 122);
+  -webkit-text-stroke: 0.6px rgb(0, 0, 0);
   position: relative;
   top: 0;
   left: 150px;
@@ -46,31 +45,31 @@
   font-weight: 900;
 }
 #c1,
-#d1 {
+#d1,
+#i1 {
   color: black;
   font-family: Pokemon Solid;
   text-decoration: none;
   border: 2px solid black;
-  margin: 1px;
   background-color: rgb(236, 243, 23);
   border-radius: 5px;
+  margin: 20px;
 }
 #c1:hover,
-#d1:hover {
+#d1:hover,
+#i1:hover {
   color: rgb(190, 3, 3);
   font-family: Pokemon Hollow;
   text-decoration: none;
   border: 2px solid black;
-  margin: 1px;
-  background-color: rgb(236, 243, 23);
+  background-color: rgb(239, 241, 157);
   border-radius: 5px;
+  transition-delay: 100ms;
+  margin: 20px;
 }
 
 #message {
   display: flex;
-}
-li {
-  list-style: none;
 }
 img {
   display: flex;
@@ -80,16 +79,10 @@ img {
   height: 200px;
   width: 200px;
 }
-#nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 #som {
   display: flex;
-  align-items: flex-start;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 #rodape {
@@ -97,7 +90,13 @@ img {
   justify-content: space-around;
   align-items: flex-end;
 }
-#itens {
+#item.nome,
+#item.tipo {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+}
+#nav-cadastro {
+  margin: 50px;
 }

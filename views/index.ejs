@@ -21,9 +21,6 @@
     <a id="d1" href="detalhes">Detalhes</a>
  
         
-        
-     
-      
       <!--<section id="message">
           <p>Mensagem temp</p> <span id="close">&times;</span>
       </section>-->
@@ -31,14 +28,19 @@
     </nav>
 
     <h1 id="t1">Pokedex</h1>
-    <h2><% lista %></h2>
-    <ul id="itens">
+    <ul id="item.nome">
         <% lista.forEach(item => { %>
             <li><%= item.Nome %></li>
-            <li><%= item.Tipo %></li>
-            <li><img src="<%=item.Imagem%>"/></li>
-        <% }) %>
     </ul>
+    <ul id="item.tipo">
+            <li><%= item.Tipo %></li>
+    </ul>
+    <ul id="item.imagem">
+            <li><img src="<%=item.Imagem%>"/></li>
+    </ul>
+    <% lista %>
+        <% }) %>
+    
 </body>
 <footer>
   <script src="/js/script.js"></script>
