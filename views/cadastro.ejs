@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <bgsound src="/img/song.wav">
     <link rel="shortcut icon" type="imagex/ico" href="/img/pokemon.ico">
-    <title>Document</title>
+    <title>Cadastro</title>
 </head>
 <body id="background-cadastro">
-    <h1>TESTE CADASTRO</h1>
-    <nav id="nav-cadastro">
+  <header class="topo">
+    <h1 class="t1">CADASTRO</h1>
+    <nav>
+      <article>
+        <audio controls loop>
+          <source src="/img/song.wav" type="audio/wav">
+        </audio>
+      </article>
       <a id="d1"href="detalhes">Detalhes</a>
       <a id="i1"href="/">Inicio</a>
       <!--<section id="message">
           <p>Mensagem temp</p> <span id="close">&times;</span>
       </section>-->
     </nav>
-
+</header>
     <form action="/detalhes" method="POST">
         <section>
             <label for="numero">Número: </label>
@@ -69,8 +74,5 @@
 </body>
 
 <footer id="rodape">
-  <audio controls loop>
-    <source src="/img/song.wav" type="audio/wav">
-  </audio>
 </footer>
 </html>
