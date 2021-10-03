@@ -9,41 +9,39 @@
     <title>Pokedex</title>
 </head>
 <body id="background-index">
-<header>
-  <nav id="nav">
-    <article id="som">
-      <audio controls loop>
-        <source src="/img/song.wav" type="audio/wav">
-      </audio>
+  <header id="cabecalho">
+      <nav id="nav">
+          <audio id="audio1"controls loop>
+            <source src="/img/song.wav" type="audio/wav">
+          </audio>
+    
+          <a id="c1" href="cadastro">Cadastro</a>
 
-  <a id="c1" href="cadastro">Cadastro</a>
-
-  <a id="d1" href="detalhes">Detalhes</a>
-
-
-    <!--<section id="message">
-        <p>Mensagem temp</p> <span id="close">&times;</span>
-    </section>-->
-
-  </nav>
-
-  <h1 class="t1">Pokedex</h1>
-</header>
+          <a id="d1" href="detalhes">Detalhes</a>
 
 
+          <!--<section id="message">
+              <p>Mensagem temp</p> <span id="close">&times;</span>
+          </section>-->
+
+      </nav>
+  
+      <h1 class="t1">Pokedex</h1>
+    </header>
+
+    <section id="lista">
       <% lista.forEach(item => { %>
         <ul id="item.nome">
             <li><%= item.Nome %></li>
-          </ul>
-    <ul id="item.tipo">
             <li><%= item.Tipo %></li>
-    </ul>
+          </ul>
+    
     <ul id="item.imagem">
-            <li><img src="<%=item.Imagem%>"/></li>
+        <li><img src="<%=item.Imagem%>"/></li>
     </ul>
     <% lista %>
         <% }) %>
-
+      </section>
 </body>
 <footer>
   <script src="/js/script.js"></script>
