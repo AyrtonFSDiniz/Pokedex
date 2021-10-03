@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" type="imagex/ico" href="/img/pokemon.ico">
-    <title>Pokedex</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" type="imagex/ico" href="/img/pokemon.ico">
+  <title>Pokedex</title>
 </head>
+
 <body id="background-index">
   <header id="cabecalho">
-      <nav id="nav">
-          <audio id="audio1"controls loop>
-            <source src="/img/song.wav" type="audio/wav">
-          </audio>
-    
-          <a id="c1" href="cadastro">Cadastro</a>
+    <nav id="nav">
+      <audio id="audio1" controls loop>
+        <source src="/img/song.wav" type="audio/wav">
+      </audio>
 
-          <a id="d1" href="detalhes">Detalhes</a>
+      <a id="c1" href="cadastro">Cadastro</a>
+
+      <a id="d1" href="detalhes">Detalhes</a>
 
 
-          <!--<section id="message">
+      <!--<section id="message">
               <p>Mensagem temp</p> <span id="close">&times;</span>
           </section>-->
 
-      </nav>
-  
-      <h1 class="t1">Pokedex</h1>
-    </header>
+    </nav>
 
-    <section id="lista">
-      <% lista.forEach(item => { %>
-        <ul id="item.nome">
-            <li><%= item.Nome %></li>
-            <li><%= item.Tipo %></li>
-          </ul>
-    
-    <ul id="item.imagem">
-        <li><img src="<%=item.Imagem%>"/></li>
-    </ul>
-    <% lista %>
-        <% }) %>
-      </section>
+    <h1 class="t1">Pokedex</h1>
+  </header>
+
+  <section id="lista">
+    <% pokedex.forEach(item=> { %>
+      <ul id="item.nome">
+        <li>
+          <%= item.Nome %>
+        </li>
+        <li>
+          <%= item.Tipo %>
+        </li>
+      </ul>
+
+      <ul id="item.imagem">
+        <li><img src="<%=item.Imagem%>" /></li>
+      </ul>
+
+      <% }) %>
+  </section>
 </body>
 <footer>
   <script src="/js/script.js"></script>
 </footer>
+
 </html>
