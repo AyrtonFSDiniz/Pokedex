@@ -53,12 +53,6 @@ app.get("/", (req, res) => {
   res.render("../views/index", { lista: pokedex });
 });
 
-/*app.get("/cadastro", (req, res) => {
-  res.send({ nome: nome, imagem: imagem, tipo: tipo });
-  // message = `Parabéns ${nome}, pokemon cadastrado com sucesso!`;
-  res.redirect("/");
-});*/
-
 app.get("/detalhes", (req, res) => {
   res.render("../views/detalhes");
 });
@@ -90,7 +84,7 @@ app.post("/new", (req, res) => {
     Categoria: categoria,
     Habilidade: habilidade,
   });
-  res.redirect("/index", { pokedex });
+  res.redirect("/", { lista: pokedex });
 });
 
 app.listen(port, () =>
