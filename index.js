@@ -43,27 +43,31 @@ const pokedex = [
     Peso: 9,
     Categoria: "Tiny Turtle",
     Habilidade: "Torrent",
-  }
+  },
 ];
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.urlencoded(({ extended: true })));
+app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) =>
-  res.render("../views/index", { pokedex })
-);
+app.get("/", (req, res) => res.render("../views/index", { pokedex }));
 
-app.get("/detalhes", (req, res) =>
-  res.render("../views/detalhes")
-);
+app.get("/detalhes", (req, res) => res.render("../views/detalhes"));
 
-app.get("/cadastro", (req, res) =>
-  res.render("../views/cadastro")
-);
+app.get("/cadastro", (req, res) => res.render("../views/cadastro"));
 
 app.post("/new", (req, res) => {
-  const { numero, nome, tipo, imagem, descricao, altura, peso, categoria, habilidade } = req.body;
+  const {
+    numero,
+    nome,
+    tipo,
+    imagem,
+    descricao,
+    altura,
+    peso,
+    categoria,
+    habilidade,
+  } = req.body;
   const novoPokemon = {
     Numero: numero,
     Nome: nome,
@@ -73,8 +77,8 @@ app.post("/new", (req, res) => {
     Altura: altura,
     Peso: peso,
     Categoria: categoria,
-    Habilidade: habilidade
-  }
+    Habilidade: habilidade,
+  };
   pokedex.push(novoPokemon);
   res.redirect("/");
 });

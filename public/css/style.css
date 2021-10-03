@@ -14,6 +14,7 @@ body {
 #background-index {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   margin-top: 0;
   background-image: url("/img/pokedexindex1.png");
   background-repeat: no-repeat;
@@ -59,6 +60,7 @@ body {
   width: 100px;
   letter-spacing: 2px;
   text-align: center;
+  align-self: baseline;
 }
 #c1:hover,
 #d1:hover,
@@ -75,6 +77,11 @@ body {
   width: 100px;
   letter-spacing: 2px;
   text-align: center;
+  align-self: baseline;
+}
+#a1 {
+  order: 2;
+  align-self: center;
 }
 
 #message {
@@ -102,17 +109,18 @@ ul {
   align-content: space-between;
 }
 #cabecalho {
-  height: 100px;
+  align-self: flex-start;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 0;
 }
 #nav {
   display: flex;
-  align-items: baseline;
-  justify-content: right;
+  flex-direction: reverse;
+  align-items: stretch;
   height: 80px;
-}
-#audio1 {
-  margin-top: 0px;
-  margin-left: 0px;
+  padding: 5px;
+  margin: 5px;
 }
 header {
   align-items: center;
