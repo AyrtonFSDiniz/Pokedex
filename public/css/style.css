@@ -7,10 +7,17 @@ body {
 
 #background-detalhes {
   margin: 0;
-  background-image: url("/img/background.jpg");
-  background-repeat: repeat;
+  margin-top: 0;
+  background-image: url("/img/bak-detalhes.png");
+  background-repeat: no-repeat;
   max-width: 100%;
   height: auto;
+  width: auto;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 #background-index {
   display: flex;
@@ -38,10 +45,6 @@ body {
 @font-face {
   font-family: Pokemon;
   src: url(/css/PokemonSolid.ttf);
-}
-h1 {
-  margin: 0;
-  padding: 0;
 }
 .t1 {
   color: rgb(236, 243, 23);
@@ -92,17 +95,44 @@ h1 {
   order: 3;
   align-self: center;
 }
-#a2 {
-  order: 3;
-  align-self: center;
-}
-#d1 {
+#a2, #a3 {
   order: 2;
   align-self: center;
 }
-#i1 {
+#d1 {
   order: 1;
   align-self: center;
+}
+#i1  {
+  order: 0;
+  align-self: center;
+}
+#i2 {
+  order: 0;
+  align-self: center;
+}
+#c2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+#c3 {
+  order: 1;
+  align-self: center;
+}
+#t1 {
+  order: 3;
+  align-self: center;
+  margin-left: 45%;
+  margin-right: 50%;
+  margin-top: 4%;
+}
+#t3 {
+  order: 3;
+  align-self: center;
+}
+#topo1 {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #message {
@@ -119,6 +149,7 @@ img {
   list-style: none;
 }
 #lista {
+  order:4;
   display: flex;
   flex-wrap: wrap;
   align-self: center;
@@ -132,7 +163,6 @@ img {
 }
 #poke {
   padding: 10px;
-  border: 0.5px solid gray;
 }
 li {
   list-style: none;
@@ -143,43 +173,12 @@ ul {
   align-self: center;
   text-align: center;
 }
-#cabecalho {
-  align-self: flex-start;
-  padding-top: 0;
-  color: rgb(236, 243, 23);
-  font-family: Pokemon;
-  font-size: 150%;
-  max-width: 100%;
-  max-height: 50%;
-  -webkit-text-stroke: 0.3px rgb(0, 0, 0);
-  padding: 0;
-  margin: 0;
-  font-style: italic;
-  letter-spacing: 3px;
-  text-align: center;
-}
-#nav {
-  display: flex;
-  flex-direction: reverse;
-  align-items: stretch;
-  height: 80px;
-  padding: 5px;
-  margin: 5px;
-  margin-top: 15px;
-}
-header {
-  align-items: center;
-}
-
 #rodape {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
-#c2 {
-  order: 4;
-  align-self: flex-start;
-}
+
 .topo {
   display: flex;
   width: 100%;
