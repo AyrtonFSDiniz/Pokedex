@@ -12,63 +12,62 @@
 
 <body id="background-cadastro">
   <header class="topo">
-    <h1 class="t1">CADASTRO</h1>
-    <nav>
-      <article>
-        <audio controls loop>
+    
+    <nav></nav>
+        <audio id="a2"controls loop>
           <source src="/img/song.wav" type="audio/wav">
         </audio>
-      </article>
-      <a id="d1" href="detalhes">Detalhes</a>
-      <a id="i1" href="/">Inicio</a>
+      <a class="d" id="d1" href="detalhes">Detalhes</a>
+      <a class="i" id="i1" href="/">Inicio</a>
       <!--<section id="message">
           <p>Mensagem temp</p> <span id="close">&times;</span>
       </section>-->
     </nav>
   </header>
+  <h1 class="t1" id="c2">CADASTRO</h1>
   <form action="/new" method="POST">
     <section>
-      <label for="numero">Número: </label>
+      <label for="numero">Número</label>
       <input type="number" name="numero" id="numero" placeholder="Digite o número do Pokemon" required>
     </section>
 
     <section>
-      <label for="nome">Nome: </label>
+      <label for="nome">Nome</label>
       <input type="text" name="nome" id="nome" placeholder="Digite o nome do Pokemon" required>
     </section>
 
     <section>
-      <label for="tipo">Tipo: </label>
+      <label for="tipo">Tipo</label>
       <input type="text" name="tipo" id="tipo" placeholder="Digite o tipo do Pokemon" required>
     </section>
 
     <section>
-      <label for="imagem">Imagem: </label>
+      <label for="imagem">Imagem</label>
       <input type="text" name="imagem" id="imagem" placeholder="Insira a url completa da imagem do Pokemon">
     </section>
 
     <section>
-      <label for="descricao">Descrição: </label>
+      <label for="descricao">Descrição</label>
       <input type="text" name="descricao" id="descricao" placeholder="Digite a descrição do Pokemon">
     </section>
 
     <section>
-      <label for="altura">Altura: </label>
+      <label for="altura">Altura</label>
       <input type="number" name="altura" id="altura" min="0" max="100" step="0.05"
         placeholder="Digite o nome do Pokemon">
     </section>
 
     <section>
-      <label for="peso">Peso: </label>
+      <label for="peso">Peso</label>
       <input type="number" name="peso" id="peso" min="0" max="1000" step="1" placeholder="Digite o peso do Pokemon">
     </section>
     <section>
-      <label for="categoria">Categoria: </label>
+      <label for="categoria">Categoria</label>
       <input type="text" name="categoria" id="categoria" placeholder="Digite a categoria do Pokemon">
     </section>
 
     <section>
-      <label for="habilidade">Habilidade: </label>
+      <label for="habilidade">Habilidade</label>
       <input type="text" name="habilidade" id="habilidade" placeholder="Digite a habilidade do Pokemon">
     </section>
 

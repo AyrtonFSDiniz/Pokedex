@@ -16,30 +16,32 @@
       <audio id="a1" controls loop>
         <source src="/img/song.wav" type="audio/wav">
       </audio>
-      <a id="c1" href="cadastro">Cadastro</a>
-      <a id="d1" href="detalhes">Detalhes</a>
+      <a class="c" id="c1" href="cadastro">Cadastro</a>
+      <a class="d" id="d1" href="detalhes">Detalhes</a>
       <!--<section id="message">
               <p>Mensagem temp</p> <span id="close">&times;</span>
           </section>-->
     </nav>
   <header id="cabecalho">
-    <h1 class="t1">Pokedex</h1>
+    <h1>Pokedex</h1>
   </header>
 
   <section id="lista">
     <% pokedex.forEach(item=> { %>
+      <section id="poke">
       <ul id="item.nome">
         <li>
-          <%= item.Nome %>
+          Nome: <%= item.Nome %>
         </li>
         <li>
-          <%= item.Tipo %>
+          Tipo: <%= item.Tipo %>
         </li>
       </ul>
 
       <ul id="item.imagem">
         <li><img src="<%=item.Imagem%>" /></li>
       </ul>
+    </section>
 
       <% }) %>
   </section>
