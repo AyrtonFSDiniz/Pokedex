@@ -11,20 +11,17 @@ body {
   background-image: url("/img/bak-detalhes.png");
   background-repeat: no-repeat;
   max-width: 100%;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   align-items: flex-start;
-  justify-content: space-between;
   background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
 }
 #background-index {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   margin-top: 0;
-  background-image: url("/img/pokedexindex1.png");
+  background-image: url("/img/index.png");
   background-repeat: repeat;
   background-size: cover;
   max-width: 100%;
@@ -123,18 +120,18 @@ body {
 #t1 {
   order: 3;
   align-self: center;
-  margin-left: 45%;
+  margin-left: 50%;
   margin-right: 50%;
-  margin-top: 4%;
+  margin-top: 0;
 }
 #t3 {
   margin-left: auto;
   margin-right: auto;
-  align-self: flex-start;
 }
 #topo1 {
   margin-left: auto;
   margin-right: auto;
+  align-self: flex-start;
 }
 
 #message {
